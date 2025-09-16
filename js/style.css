@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "JetSet";
+  src: url(../fonts/Jet\ Set.ttf);
+  font-weight: normal;
+}
+
+.textWrapper {
+  position: absolute;
+  bottom: 9px;
+  right: 0px;
+  width: 774px;
+  height: 70px;
+  color: #00f1ff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.textSource {
+  font-family: "JetSet";
+  font-size: 54px;
+  display: inline-block;
+  max-width: 765.5px;
+  overflow: hidden;
+  vertical-align: middle;
+  opacity: 0;
+  text-shadow: 3px;
+  transition: opacity 1s ease-in-out;
+  white-space: nowrap;
+}
+
+.fade-in {
+  animation: fadeIn 2s forwards;
+}
+
+/* Fade out animation */
+.fade-out {
+  animation: fadeOut 2s forwards;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+*/ .scText {
+  position: absolute;
+  left: 270px;
+  font-size: 58px;
+  color: black;
+}
+
+.barVideo {
+  position: absolute;
+  bottom: 0px;
+}
+
+#currentlyText {
+  display: none;
+}
+
+#currentGame {
+  display: none;
+}
+
+#comingUpText {
+  display: none;
+}
+
+#comingUpText {
+  display: none;
+}

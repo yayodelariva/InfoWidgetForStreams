@@ -1,0 +1,17 @@
+<!DOCTYPE StreamControlLayout>
+<layout width="400" height="210" tabbed="1">
+ <tab name="Match Info">
+  <label x="10" y="14" width="46" height="13">Currently</label>
+  <label x="10" y="44" width="46" height="13">Up Next</label>
+  <label x="10" y="115" width="46" height="13">Game</label>
+  <lineEdit id="currentGame" x="60" y="10" width="170" height="20"/>
+  <lineEdit id="comingUpGame" x="60" y="40" width="170" height="20"/>
+  <button type="swap" x="10" y="70" width="60" height="23" tooltip="Swap the Scores" id="swap1" swapSet1="currentGame" swapSet2="comingUpGame">Swap</button>
+  <button type="reset" x="80" y="70" width="60" height="23" tooltip="Reset the Scores" id="reset1" reset=",">Reset</button>
+  <button type="reset" x="150" y="70" width="60" height="23" tooltip="Clear Match Info" id="reset2" reset="currentGame,comingUpGame">Clear</button>
+  <comboBox id="game" editable="1" x="60" y="110" width="100" height="20">
+   <comboItem>JSRF</comboItem>
+
+  </comboBox>
+ </tab>
+</layout>
